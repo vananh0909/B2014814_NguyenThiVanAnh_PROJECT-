@@ -112,6 +112,7 @@ export default {
 
     const create = async () => {
       const createCategory = await http_create(Category, data.itemAdd);
+      console.log(createCategory);
       if(createCategory){
         alert_success("Thông báo", "Bạn đã tạo thành công danh mục sản phẩm");
         await refresh();
